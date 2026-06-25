@@ -1,0 +1,192 @@
+{
+  "carSetupGuides": [
+    {
+      "id": "toe",
+      "title": "Toe",
+      "description": "Understanding toe-in vs toe-out and their effect on stability",
+      "icon": "Settings",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Toe คือมุมที่ล้อชี้เข้าหรือชี้ออกเมื่อมองรถจากด้านบน ใช้ปรับว่ารถจะนิ่งบนทางตรงแค่ไหน และจะตอบสนองตอนเลี้ยวเข้าโค้งไวหรือช้า เป็นการตั้งศูนย์ล้ออีกแบบหนึ่งที่สำคัญ ซึ่งค่านี้ละเอียดมากใน Assetto Corsa Competizione จึงควรปรับทีละน้อย"
+        },
+        {
+          "type": "bulletList",
+          "title": "ข้อควรรู้",
+          "items": [
+            "ค่าบวก (+) คือ Toe-in รถจะนิ่งขึ้น แต่ถ้ามากเกินไปจะหนืดและกินยาง",
+            "ค่าลบ (-) คือ Toe-out รถจะหันไวขึ้น แต่ต้องระวังความนิ่งบนทางตรง"
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "ค่าที่ปรับได้",
+          "columns": ["การปรับ", "อาการรถ", "ข้อควรระวัง"],
+          "rows": [
+            ["เพิ่ม Toe-in หน้า", "รถนิ่งขึ้นตอนเบรกและตอนถือพวงมาลัยตรง", "ถ้ามากเกินไป รถอาจเลี้ยวเข้าช้าและยางหน้าร้อนง่าย"],
+            ["เพิ่ม Toe-out หน้า", "รถหันเข้าโค้งไวขึ้น เหมาะเมื่อรถดื้อโค้งช่วงแรก", "ถ้ามากเกินไป รถจะไวเกินและไม่นิ่งบนทางตรง"],
+            ["เพิ่ม Toe-in หลัง", "ท้ายรถนิ่งขึ้น โดยเฉพาะตอนเบรกและเร่งออกโค้ง", "ถ้ามากเกินไป รถอาจอืดและเสียความเร็วปลาย"],
+            ["เพิ่ม Toe-out หลัง", "ท้ายรถหมุนง่ายขึ้น ช่วยให้รถเปลี่ยนทิศไว", "เสี่ยงท้ายปัด มือใหม่ควรหลีกเลี่ยงถ้ายังจับอาการรถไม่แม่น"]
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "ผลต่อยางและประสิทธิภาพ",
+          "columns": ["ค่า", "ผลดี", "ผลเสีย"],
+          "rows": [
+            ["Toe น้อย", "ยางเสียดสีน้อย รถไหลดีบนทางตรง", "รถอาจตอบสนองช้า หรือไม่นิ่งพอในบางช่วง"],
+            ["Toe พอดี", "รถนิ่งพอและยังเลี้ยวได้เป็นธรรมชาติ", "ต้องทดสอบตามสนาม เพราะแต่ละรถตอบสนองไม่เท่ากัน"],
+            ["Toe มาก", "แก้อาการบางอย่างได้ชัด เช่น ดื้อโค้งหรือท้ายไม่นิ่ง", "ยางร้อนง่าย ความเร็วลด และรถอาจคาดเดายาก"]
+          ]
+        },
+        {
+          "type": "bulletList",
+          "title": "หลักการปรับแบบ Troubleshooting",
+          "items": [
+            "รถดื้อโค้งตอนเริ่มเลี้ยว: ลองเพิ่ม Toe-out หน้าเล็กน้อย",
+            "รถไวเกินบนทางตรง: ลด Toe-out หน้า หรือเพิ่ม Toe-in หน้าเล็กน้อย",
+            "ท้ายรถปัดตอนเบรก: เพิ่ม Toe-in หลังเล็กน้อย",
+            "รถออกโค้งแล้วท้ายไม่นิ่ง: เพิ่ม Toe-in หลังเล็กน้อย",
+            "ยางร้อนหรือสึกเร็วผิดปกติ: ลดค่า Toe แล้วลองขับใหม่"
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "คำแนะนำ",
+          "text": "ปรับ Toe ทีละ 1-2 click แล้วออกไปลองขับก่อน อย่าปรับพร้อมกับ Camber, Ride Height หรือ Suspension หลายค่าในรอบเดียว เพราะจะทำให้แยกไม่ออกว่ารถดีขึ้นหรือแย่ลงจากค่าไหน"
+        },
+        {
+          "type": "compare",
+          "title": "ความสัมพันธ์กับค่าอื่น",
+          "columns": ["ค่านี้", "ส่งผลร่วมกับ", "เพราะ"],
+          "rows": [
+            ["Toe หน้า", "Camber หน้า", "ทั้งสองค่าส่งผลกับการเกาะถนนและอุณหภูมิยางหน้า"],
+            ["Toe หลัง", "Rear Ride Height", "ทั้งสองค่าส่งผลกับความนิ่งของท้ายรถและการหมุนของรถ"],
+            ["Toe ทั้งหน้าและหลัง", "Tyre Pressure", "ถ้า Toe มากเกินไป ยางอาจร้อนขึ้นและทำให้แรงดันเปลี่ยนระหว่างวิ่ง"]
+          ]
+        },
+        {
+          "type": "bulletList",
+          "title": "จำง่ายๆ สำหรับมือใหม่",
+          "items": [
+            "Toe-in คือปลายล้อหันเข้าหากัน ช่วยให้รถนิ่งขึ้น แต่ถ้าเยอะเกินไปจะทำให้รถหนืดและยางทำงานหนัก",
+            "Toe-out คือปลายล้อหันออกจากกัน ช่วยให้รถเปลี่ยนทิศทางไวขึ้น แต่ถ้าเยอะเกินไปจะทำให้รถไวเกินและควบคุมยาก",
+            "ล้อหน้าเน้นความไวตอนเข้าโค้ง ส่วนล้อหลังเน้นความนิ่งตอนเบรก ออกโค้ง และวิ่งทางตรง"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camber",
+      "title": "Camber",
+      "description": "Positive vs negative camber and when to use each",
+      "icon": "Settings",
+      "content": "Camber guide content coming soon..."
+    },
+    {
+      "id": "suspension",
+      "title": "Suspension",
+      "description": "Suspension stiffness and ride height adjustments",
+      "icon": "Settings",
+      "content": "Suspension guide content coming soon..."
+    },
+    {
+      "id": "tire-pressure",
+      "title": "Tire Pressure (PSI)",
+      "description": "Optimal tire pressure for different conditions",
+      "icon": "Settings",
+      "content": "Tire pressure guide content coming soon..."
+    }
+  ],
+  "weatherConditions": [
+    {
+      "id": "dry",
+      "title": "Dry",
+      "description": "Optimal racing conditions with maximum grip",
+      "icon": "Sun",
+      "content": "Dry weather guide content coming soon..."
+    },
+    {
+      "id": "wet",
+      "title": "Wet",
+      "description": "Rain conditions requiring wet tires and adjusted driving style",
+      "icon": "CloudRain",
+      "content": "Wet weather guide content coming soon..."
+    },
+    {
+      "id": "mixed",
+      "title": "Mixed",
+      "description": "Changing conditions requiring strategic tire choices",
+      "icon": "Cloud",
+      "content": "Mixed weather guide content coming soon..."
+    }
+  ],
+  "gameSettings": [
+    {
+      "id": "graphics",
+      "title": "Graphics",
+      "description": "Visual settings for optimal performance and clarity",
+      "icon": "Monitor",
+      "content": "Graphics settings guide content coming soon..."
+    },
+    {
+      "id": "physics",
+      "title": "Physics",
+      "description": "Physics settings for realistic driving experience",
+      "icon": "Cpu",
+      "content": "Physics settings guide content coming soon..."
+    }
+  ],
+  "ratingPoints": [
+    {
+      "id": "tr",
+      "title": "Track Rating (TR)",
+      "description": "Track knowledge rating and clean lap stars",
+      "icon": "Trophy",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Track Rating (TR) คือค่าที่ช่วยยืนยันว่า Driver รู้จักสนามนั้นดีพอ ขับตามเส้นทางได้ถูกต้อง และสามารถจบรอบแบบสะอาดได้ ไม่ใช่แค่จำทางได้ แต่ต้องขับด้วยความเร็วที่สมเหตุสมผลด้วย"
+        },
+        {
+          "type": "paragraph",
+          "text": "การเก็บ TR จะนับจาก clean laps หรือรอบที่ขับสะอาด หนึ่งรอบสะอาดจะได้ 1 ดาว สองรอบสะอาดติดต่อกันจะได้ 2 ดาว และสี่รอบสะอาดติดต่อกันจะได้ 3 ดาว"
+        },
+        {
+          "type": "paragraph",
+          "text": "ถึงจะฟังดูง่าย แต่รอบที่นับต้องมี pace ที่เหมาะสมด้วย จะค่อยๆ คลานรอบสนามช้ามากๆ เพื่อเอาดาวไม่ได้ เป้าหมายคือขับให้สะอาด คุมรถให้อยู่ และทำรอบต่อเนื่องให้สม่ำเสมอ"
+        },
+        {
+          "type": "callout",
+          "title": "คำแนะนำในการปั้น TR",
+          "text": "เริ่มจากรถที่ขับง่ายและคุ้นมือ เช่น BMW M4 GT3 หรือ Aston Martin V8 แล้วเลือกสนามที่เข้าใจง่ายอย่าง Monza หรือ Misano จากนั้นโฟกัสที่การต่อรอบให้สะอาดและสม่ำเสมอ มากกว่าการไล่เวลาต่อรอบให้เร็วที่สุด"
+        }
+      ]
+    },
+    {
+      "id": "sa",
+      "title": "Safety Rating (SA)",
+      "description": "Safety rating system and maintaining good sportsmanship",
+      "icon": "Shield",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Safety Rating (SA) คือค่าที่บอกว่า Driver ขับใกล้รถคันอื่นได้ปลอดภัยแค่ไหน พูดง่ายๆ คือเกมไม่ได้ดูแค่ว่าขับเร็วหรือไม่ แต่ดูด้วยว่าขับร่วมกับรถคันอื่นได้สะอาดและไม่สร้างอุบัติเหตุหรือเปล่า"
+        },
+        {
+          "type": "paragraph",
+          "text": "ก่อนจะเริ่มเก็บ SA ได้ ควรมีค่า Consistency (CN) และ Car Control (CC) ขั้นต่ำก่อน ซึ่งสองค่านี้มาจากการขับรอบที่สะอาด คุมรถอยู่ และทำเวลาได้สม่ำเสมอ"
+        },
+        {
+          "type": "paragraph",
+          "text": "SA จะเพิ่มจากการขับใกล้รถคันอื่นโดยไม่ชนกัน โดยต้องเข้าไปอยู่ในระยะประมาณ 0.7 วินาที และรักษาระยะไม่ให้ห่างเกิน 1.2 วินาทีเพื่อเก็บ Trust points ถ้าชนรถคันอื่นจะได้ penalty points แทน ส่วนการจบการแข่งขันก็ช่วยเพิ่ม Trust เป็นโบนัสได้ด้วย"
+        },
+        {
+          "type": "callout",
+          "title": "คำแนะนำในการปั้น SA",
+          "text": "ถ้าเริ่มจากศูนย์ ให้ลองแข่งกับ AI ประมาณ 20-30 นาที และตั้งระดับ AI ให้ใกล้เคียงกับฝีมือตัวเอง เพื่อให้ตามหรือขับใกล้ๆ ได้โดยไม่ชนกัน เมื่อ SA อยู่ราวๆ 30 ก็เริ่มเข้าเซิร์ฟเวอร์ออนไลน์ได้ แต่ถ้าจะเข้า lobby ที่จริงจัง แนะนำให้ดัน SA ไปอย่างน้อย 50-60 ขึ้นไป"
+        }
+      ]
+    }
+  ]
+}
