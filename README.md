@@ -8,51 +8,6 @@ RaceMind คือ desktop companion และ Tools ช่วยเหลือ
 
 - **Fuel Calculator**: ช่วย Driver คำนวณ Fuel Required และ Recommended Fuel จาก Race Duration, Lap Time, Fuel per Lap และ Safety Margin
 - **GuidePage**: รวบรวม racing guides สำหรับ Assetto Corsa Competizione เช่น Track Guides, Car Setup Guides, Weather Conditions, Game Settings และ Rating Points
-- **Desktop Experience**: ใช้ Electron สำหรับหน้าต่างแอปแบบ custom title bar, window controls และการเปิด external link
-
-## Tech Stack
-
-- Electron 30
-- Vite 5
-- React 19
-- TypeScript strict mode
-- Zustand
-- Tailwind CSS v4
-- Mantine v9
-- Lucide React
-- electron-builder
-
-## การติดตั้งและรันโปรเจค
-
-ติดตั้ง dependencies:
-
-```bash
-npm install
-```
-
-รัน development mode:
-
-```bash
-npm run dev
-```
-
-ตรวจ lint:
-
-```bash
-npm run lint
-```
-
-สร้าง production build และ installer:
-
-```bash
-npm run build
-```
-
-Preview production renderer build:
-
-```bash
-npm run preview
-```
 
 ## คำสำคัญในโดเมน
 
@@ -67,8 +22,3 @@ npm run preview
 ## ขอบเขตปัจจุบัน
 
 RaceMind รองรับ Assetto Corsa Competizione เป็นหลักในตอนนี้ ยังไม่ถือว่าเป็น multi-sim companion จนกว่าจะมีการออกแบบและรองรับ simulator อื่นอย่างตั้งใจ
-
-## เอกสารอ้างอิงภายใน
-
-- `CONTEXT.md`: นิยามภาษาโดเมนและคำที่ควรใช้ใน RaceMind
-- `AGENTS.md`: คู่มือสำหรับ agent ที่ทำงานต่อในโปรเจคนี้
