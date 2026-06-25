@@ -30,6 +30,13 @@ logo-new
 .cache
 tsconfig.tsbuildinfo
 
+# Internal docs (personal notes, AI agent config)
+CONTEXT.md
+AGENTS.md
+ARCHITECTURE.md
+.agents/
+RELEASE_NOTES.md
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
