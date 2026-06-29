@@ -57,7 +57,7 @@ export default function GuideContentRenderer({ content }: GuideContentRendererPr
                   <thead className="bg-[#1d2433] text-xs uppercase tracking-wide text-gray-300">
                     <tr>
                       {block.columns.map((column) => (
-                        <th key={column} className="px-4 py-3 font-semibold">
+                        <th key={column} className="px-4 py-3 font-semibold text-nowrap">
                           {column}
                         </th>
                       ))}
@@ -69,7 +69,7 @@ export default function GuideContentRenderer({ content }: GuideContentRendererPr
                         {row.map((cell, cellIndex) => (
                           <td
                             key={`${key}-${rowIndex}-${cellIndex}`}
-                            className="px-4 py-3 align-top leading-relaxed text-gray-200"
+                            className="px-4 py-3 align-top leading-relaxed text-gray-200 first:font-medium"
                           >
                             {cell}
                           </td>

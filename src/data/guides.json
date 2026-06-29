@@ -1,6 +1,70 @@
 {
   "carSetupGuides": [
     {
+      "id": "tire-pressure",
+      "title": "Tire Pressure (PSI)",
+      "description": "Optimal tire pressure for different conditions",
+      "icon": "Settings",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Tire Pressure หรือ PSI คือแรงดันลมยาง วัดเป็น pounds per square inch และเป็นหนึ่งในค่าที่ Driver ควรเช็กก่อนปรับ setup อื่น เพราะยางคือจุดเดียวที่รถสัมผัสพื้น ถ้า PSI ไม่อยู่ในช่วงทำงาน ต่อให้ setup ส่วนอื่นดี รถก็อาจไม่มี grip, กินยาง หรือเสียความสม่ำเสมอระหว่าง stint ได้"
+        },
+        {
+          "type": "bulletList",
+          "title": "ข้อควรรู้",
+          "items": [
+            "Dry tyre ควรเล็ง PSI Hot ตอนยางทำงานอยู่ที่ 27.0 PSI",
+            "Wet tyre ควรเล็ง PSI Hot ตอนยางทำงานอยู่ที่ประมาณ 29.0 - 31.0 PSI",
+            "ค่า PSI ตอนตั้งใน garage เป็นค่าเริ่มต้น ยางจะเปลี่ยนแรงดันเมื่ออุณหภูมิสูงขึ้น จึงควรตัดสินจาก PSI Hot หลังวิ่งจริงประมาณ 3-5 รอบด้วย pace ใกล้เคียงจริง"
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "ช่วง PSI เป้าหมาย",
+          "columns": ["สภาพสนาม", "ช่วง PSI"],
+          "rows": [
+            ["Dry", "27.0 PSI"],
+            ["Wet", "29.0 - 31.0 PSI"]
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "อาการจาก PSI",
+          "columns": ["ค่า PSI", "อาการรถ", "ข้อควรระวัง"],
+          "rows": [
+            ["ต่ำเกินไป", "รถอาจย้วย ตอบสนองช้า และยางทำงานหนักตอนเปลี่ยนทิศทาง", "อาจทำให้ยางร้อนผิดรูปแบบและ pace ไม่สม่ำเสมอ"],
+            ["อยู่ในช่วงเป้าหมาย", "contact patch ทำงานดี รถให้ grip และ feedback คาดเดาง่ายขึ้น", "ยังต้องดูร่วมกับอุณหภูมิสนาม fuel load และ driving style"],
+            ["สูงเกินไป", "รถอาจลื่นง่ายขึ้น หน้ายางสัมผัสพื้นน้อยลง และเสีย grip ในโค้ง", "อาจทำให้รถไวเกินหรือเสียความมั่นใจตอนเบรกและตอนออกโค้ง"]
+          ]
+        },
+        {
+          "type": "bulletList",
+          "title": "หลักการปรับแบบ Troubleshooting",
+          "items": [
+            "PSI Hot ต่ำกว่า 27.0 PSI ใน dry: เพิ่ม PSI ตามจำนวนที่ขาด เพื่อให้ยางเข้าช่วงทำงานและ contact patch ดีขึ้น",
+            "PSI Hot สูงกว่า 27.0 PSI ใน dry: ลด PSI ตามจำนวนที่เกิน เพื่อไม่ให้ยางร้อนเกินไปและเสีย contact patch",
+            "PSI Hot ต่ำกว่า 29.0 PSI ใน wet: เพิ่ม PSI ตามจำนวนที่ขาด เพื่อให้ยางเปียกเข้าช่วงทำงานและช่วยให้รถตัดน้ำได้มั่นคงขึ้น",
+            "PSI Hot สูงกว่า 31.0 PSI ใน wet: ลด PSI ตามจำนวนที่เกิน เพื่อไม่ให้หน้ายางเสีย contact patch และลื่นง่ายเกินไป"
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "คำแนะนำ",
+          "text": "ตั้งค่า PSI แล้วตรวจจาก PSI Hot หลังวิ่งต่อเนื่องหลายรอบ วิธีที่ปลอดภัยคือวิ่ง 3-5 รอบด้วย pace ปกติ จำค่า PSI Hot ตอนยางเริ่มนิ่ง แล้วค่อยกลับมาปรับ PSI ทีละ 1-2 click โดย 1 click เท่ากับ 0.1 PSI"
+        },
+        {
+          "type": "bulletList",
+          "title": "จำง่ายๆ สำหรับมือใหม่",
+          "items": [
+            "Dry ให้เล็ง PSI Hot 27.0 PSI",
+            "Wet ให้เล็ง PSI Hot 29.0 - 31.0 PSI",
+            "ในหน้า setup ช่องที่ปรับคือ PSI และช่องที่ใช้ตรวจหลังวิ่งคือ PSI Hot"
+          ]
+        }
+      ]
+    },
+    {
       "id": "toe",
       "title": "Toe",
       "description": "Understanding toe-in vs toe-out and their effect on stability",
@@ -56,16 +120,6 @@
           "text": "ปรับ Toe ทีละ 1-2 click แล้วออกไปลองขับก่อน อย่าปรับพร้อมกับ Camber, Ride Height หรือ Suspension หลายค่าในรอบเดียว เพราะจะทำให้แยกไม่ออกว่ารถดีขึ้นหรือแย่ลงจากค่าไหน"
         },
         {
-          "type": "compare",
-          "title": "ความสัมพันธ์กับค่าอื่น",
-          "columns": ["ค่านี้", "ส่งผลร่วมกับ", "เพราะ"],
-          "rows": [
-            ["Toe หน้า", "Camber หน้า", "ทั้งสองค่าส่งผลกับการเกาะถนนและอุณหภูมิยางหน้า"],
-            ["Toe หลัง", "Rear Ride Height", "ทั้งสองค่าส่งผลกับความนิ่งของท้ายรถและการหมุนของรถ"],
-            ["Toe ทั้งหน้าและหลัง", "Tyre Pressure", "ถ้า Toe มากเกินไป ยางอาจร้อนขึ้นและทำให้แรงดันเปลี่ยนระหว่างวิ่ง"]
-          ]
-        },
-        {
           "type": "bulletList",
           "title": "จำง่ายๆ สำหรับมือใหม่",
           "items": [
@@ -81,61 +135,72 @@
       "title": "Camber",
       "description": "Positive vs negative camber and when to use each",
       "icon": "Settings",
-      "content": "Camber guide content coming soon..."
-    },
-    {
-      "id": "suspension",
-      "title": "Suspension",
-      "description": "Suspension stiffness and ride height adjustments",
-      "icon": "Settings",
-      "content": "Suspension guide content coming soon..."
-    },
-    {
-      "id": "tire-pressure",
-      "title": "Tire Pressure (PSI)",
-      "description": "Optimal tire pressure for different conditions",
-      "icon": "Settings",
-      "content": "Tire pressure guide content coming soon..."
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Camber คือมุมเอียงของล้อเมื่อมองรถจากด้านหน้า ใช้ปรับว่าหน้ายางสัมผัสพื้นอย่างไรตอนรถรับโหลดในโค้ง สำหรับรถ ใน Assetto Corsa Competizione ค่า Camber มีผลโดยตรงกับ grip, อุณหภูมิยาง และความสม่ำเสมอของรถตลอด stint จึงควรปรับจากอาการรถและข้อมูลอุณหภูมิยาง ไม่ใช่ปรับจากตัวเลขอย่างเดียว"
+        },
+        {
+          "type": "bulletList",
+          "title": "ข้อควรรู้",
+          "items": [
+            "Positive camber คือด้านบนของล้อเอียงออกจากกลางรถ ด้านล่างเอียงเข้าหากลางรถ โดยทั่วไปไม่ใช่ทิศทางหลักที่ใช้กับ สำหรับการทำเวลา",
+            "Negative camber คือด้านบนของล้อเอียงเข้าหากลางรถ ด้านล่างเอียงออกจากกลางรถ รถ มักใช้ค่านี้เพื่อให้หน้ายางมี contact patch ดีขึ้นตอนเข้าโค้ง",
+            "Camber ที่เหมาะสมช่วยให้รถมี grip ในโค้งมากขึ้น แต่ถ้ามากเกินไปจะทำให้ยางด้านในทำงานหนักและเสียประสิทธิภาพตอนเบรกหรือวิ่งทางตรง"
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "ค่า Camber ที่ปรับได้",
+          "columns": ["การปรับ", "อาการรถ", "ข้อควรระวัง"],
+          "rows": [
+            ["เพิ่ม Negative camber หน้า", "ล้อหน้ามี grip ตอนเข้าโค้งและกลางโค้งดีขึ้น รถตอบสนองไวขึ้นเมื่อมีโหลดด้านข้าง", "ถ้ามากเกินไป ยางด้านในร้อนกว่าด้านนอกมาก และอาจเสียประสิทธิภาพตอนเบรกหนัก"],
+            ["ลด Negative camber หน้า", "รถนิ่งขึ้นตอนเบรกและวิ่งทางตรง หน้ายางสัมผัสพื้นสม่ำเสมอขึ้นเมื่อไม่ได้อยู่ในโค้ง", "ถ้าน้อยเกินไป รถอาจดื้อโค้ง เพราะตอนเข้าโค้ง contact patch ไม่พอ"],
+            ["เพิ่ม Negative camber หลัง", "ท้ายรถมี grip ตอนโค้งยาวและตอนออกโค้งที่มีโหลดสูงมากขึ้น", "ถ้ามากเกินไป ท้ายรถอาจเสีย traction ตอนเร่งออกโค้งและยางด้านในร้อนเกิน"],
+            ["ลด Negative camber หลัง", "ช่วยให้ traction ตอนออกโค้งและการวางคันเร่งนิ่งขึ้นในบางสนาม", "ถ้าน้อยเกินไป ท้ายรถอาจลื่นกลางโค้งเมื่อโหลดด้านข้างสูง"]
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "อ่านอุณหภูมิยาง",
+          "columns": ["ตำแหน่ง", "เป้าหมายที่ควรดู", "ความหมาย"],
+          "rows": [
+            ["ล้อหน้า", "ส่วนต่างอุณหภูมิด้านนอกถึงด้านในควรต่ำกว่า 9°C", "ถ้าด้านในร้อนกว่าด้านนอกมาก แปลว่าอาจใช้ Negative camber มากเกินไปหรือ setup ทำให้ยางด้านในทำงานหนัก"],
+            ["ล้อหลัง", "ส่วนต่างอุณหภูมิด้านนอกถึงด้านในควรต่ำกว่า 5°C", "ล้อหลังไวต่อ traction ถ้าอุณหภูมิด้านในต่างมากเกินไป รถอาจเสีย grip ตอนออกโค้ง"],
+            ["ทุกล้อ", "ดูหลังวิ่งหลายรอบด้วย pace ใกล้เคียงจริง", "อย่าตัดสินจาก out lap หรือรอบที่ยังยางไม่เข้าช่วงทำงาน เพราะอุณหภูมิยังไม่สะท้อน setup จริง"]
+          ]
+        },
+        {
+          "type": "bulletList",
+          "title": "หลักการปรับแบบ Troubleshooting",
+          "items": [
+            "รถดื้อโค้งกลางโค้ง: ลองเพิ่ม Negative camber หน้าทีละน้อย แล้วเช็กว่ายางด้านในไม่ร้อนเกิน",
+            "เบรกแล้วรถไม่นิ่งหรือจับพื้นไม่เต็ม: ลองลด Negative camber หน้าเล็กน้อยและทดสอบจุดเบรกเดิมซ้ำ",
+            "ท้ายรถลื่นกลางโค้งยาว: ลองเพิ่ม Negative camber หลังเล็กน้อยถ้าอุณหภูมิยางยังอยู่ในช่วงที่รับได้",
+            "เร่งออกโค้งแล้วท้ายปัดง่าย: ลองลด Negative camber หลังเล็กน้อยเพื่อช่วยให้หน้ายางรับแรงขับได้ดีขึ้น",
+            "ยางด้านในร้อนกว่าด้านนอกมาก: ลด Negative camber ทีละน้อยก่อน แล้วค่อยดูร่วมกับ tyre pressure และ toe"
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "คำแนะนำ",
+          "text": "ปรับ Camber ทีละน้อยและทดสอบด้วย fuel load, tyre pressure และสภาพสนามที่ใกล้เคียงกับการแข่งจริง อย่าปรับ Camber พร้อมกับ Toe, Ride Height หรือ Suspension หลายค่าพร้อมกัน เพราะจะทำให้แยกไม่ออกว่าอาการรถเปลี่ยนจากค่าไหน"
+        },
+        {
+          "type": "bulletList",
+          "title": "จำง่ายๆ สำหรับมือใหม่",
+          "items": [
+            "ส่วนใหญ่ต้องการ Negative camber เพื่อให้ยางเกาะดีขึ้นตอนรถเอียงรับโหลดในโค้ง",
+            "มากกว่าไม่ได้แปลว่าดีกว่าเสมอ ถ้ายางด้านในร้อนเกินหรือรถเสีย traction แปลว่าค่าอาจเกินจุดเหมาะสม",
+            "ให้ตัดสินจากอาการรถร่วมกับอุณหภูมิยางหลังวิ่งจริงหลายรอบ ไม่ใช่ดูจากตัวเลข Camber อย่างเดียว"
+          ]
+        }
+      ]
     }
   ],
   "weatherConditions": [
-    {
-      "id": "dry",
-      "title": "Dry",
-      "description": "Optimal racing conditions with maximum grip",
-      "icon": "Sun",
-      "content": "Dry weather guide content coming soon..."
-    },
-    {
-      "id": "wet",
-      "title": "Wet",
-      "description": "Rain conditions requiring wet tires and adjusted driving style",
-      "icon": "CloudRain",
-      "content": "Wet weather guide content coming soon..."
-    },
-    {
-      "id": "mixed",
-      "title": "Mixed",
-      "description": "Changing conditions requiring strategic tire choices",
-      "icon": "Cloud",
-      "content": "Mixed weather guide content coming soon..."
-    }
   ],
   "gameSettings": [
-    {
-      "id": "graphics",
-      "title": "Graphics",
-      "description": "Visual settings for optimal performance and clarity",
-      "icon": "Monitor",
-      "content": "Graphics settings guide content coming soon..."
-    },
-    {
-      "id": "physics",
-      "title": "Physics",
-      "description": "Physics settings for realistic driving experience",
-      "icon": "Cpu",
-      "content": "Physics settings guide content coming soon..."
-    }
   ],
   "ratingPoints": [
     {
@@ -159,7 +224,7 @@
         {
           "type": "callout",
           "title": "คำแนะนำในการปั้น TR",
-          "text": "เริ่มจากรถที่ขับง่ายและคุ้นมือ เช่น BMW M4 GT3 หรือ Aston Martin V8 แล้วเลือกสนามที่เข้าใจง่ายอย่าง Monza หรือ Misano จากนั้นโฟกัสที่การต่อรอบให้สะอาดและสม่ำเสมอ มากกว่าการไล่เวลาต่อรอบให้เร็วที่สุด"
+          "text": "เริ่มจากรถที่ขับง่ายและคุ้นมือ เช่น BMW M4 หรือ Aston Martin V8 แล้วเลือกสนามที่เข้าใจง่ายอย่าง Monza หรือ Misano จากนั้นโฟกัสที่การต่อรอบให้สะอาดและสม่ำเสมอ มากกว่าการไล่เวลาต่อรอบให้เร็วที่สุด"
         }
       ]
     },

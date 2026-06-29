@@ -10,7 +10,7 @@ interface GuideState {
 
 export const useGuideStore = create<GuideState>((set) => ({
   searchQuery: '',
-  activeCategory: 'carSetupGuides',
+  activeCategory: 'all',
   setSearchQuery: (query) => set(() => ({ searchQuery: query })),
   setActiveCategory: (category) => set(() => ({ activeCategory: category })),
 }))
