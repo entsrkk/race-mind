@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Settings, Sun, CloudRain, Cloud, Monitor, Cpu, Trophy, Shield, LucideIcon } from "lucide-react";
+import { Settings, Sun, CloudRain, Cloud, Monitor, Cpu, Trophy, Shield, Star, Repeat, Gamepad2, Gauge, Swords, Medal, Map, LucideIcon } from "lucide-react";
 import guidesData from "../../data/guides.json";
 import { useDebounce } from "../../hooks/useDebounce";
 import { useGuideStore } from "../../store/guideStore";
@@ -106,6 +106,13 @@ export default function GuidePage() {
     Cpu,
     Trophy,
     Shield,
+    Star,
+    Repeat,
+    Gamepad2,
+    Gauge,
+    Swords,
+    Medal,
+    Map,
   };
 
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Settings, Sun, CloudRain, Cloud, Monitor, Cpu, Trophy, Shield, LucideIcon } from "lucide-react";
+import { Settings, Sun, CloudRain, Cloud, Monitor, Cpu, Trophy, Shield, Star, Repeat, Gamepad2, Gauge, Swords, Medal, Map, LucideIcon } from "lucide-react";
 import { Guide } from "../../types/guide";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -11,6 +11,13 @@ const iconMap: Record<string, LucideIcon> = {
   Cpu,
   Trophy,
   Shield,
+  Star,
+  Repeat,
+  Gamepad2,
+  Gauge,
+  Swords,
+  Medal,
+  Map,
 };
 
 interface GuideCardProps {
