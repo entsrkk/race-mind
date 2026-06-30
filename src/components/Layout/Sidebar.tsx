@@ -12,7 +12,7 @@ interface SidebarMenuItemProps {
 
 const SidebarMenuItem = memo(
   ({ icon: Icon, active = false, label, onClick }: SidebarMenuItemProps) => (
-    <div className="relative group flex items-center justify-center mb-8 cursor-pointer w-full" title={label} onClick={onClick}>
+    <div className="relative group flex items-center justify-center mb-2 cursor-pointer w-full h-12" title={label} onClick={onClick}>
       <div className={combineClasses( "absolute left-0 w-1.25 h-10 rounded-r-full bg-blue-400 transition-all duration-500", active ? "opacity-100 scale-100 shadow-[0_0_4px_rgba(129,140,248,0.6)]" : "opacity-0 scale-50 group-hover:opacity-30 group-hover:scale-100", )} />
       <div className={combineClasses( "transition-all duration-300 relative z-10", active ? "text-blue-400" : "text-gray-500 group-hover:text-blue-300", )} >
         <Icon size={22} strokeWidth={2} />
